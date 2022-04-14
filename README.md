@@ -8,8 +8,8 @@ The application can help you learn Spanish with displaying briefly Spanish and E
 #### *__v1.0__*
 
  - *learn Spanish with flash cards of random words appearing on your screen*
- - *if you already know the word, just remove it with learn button ✔️*
- - *otherwise you can skip the word ❌ and try next time it appears*
+ - *if you already know the word, just remove it from your wordbase with learn button ✔️*
+ - *otherwise you can skip the word ❌ and try next time when it appears again*
 
 
 ## ToDo
