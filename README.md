@@ -1,4 +1,4 @@
-# Flash Card App
+# Flash Card App 📚🧠
 
 <blockquote>
 The application can help you learn Spanish with displaying briefly Spanish and English words
