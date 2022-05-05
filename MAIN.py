@@ -69,6 +69,7 @@ def skip_word():
 window = Tk()
 window.title("Flash Card App")
 window.config(padx=50, pady=50, bg=BG_COLOR)
+window.wm_resizable(height=False, width=False)
 
 # adding canvas
 canvas = Canvas(width=800, height=520, bg=BG_COLOR, highlightthickness=0)
@@ -81,14 +82,16 @@ canvas.grid(row=0, column=0, columnspan=2)
 
 # adding buttons
 check_image = PhotoImage(file="images/learn_word.png")
-check_button = Button(image=check_image, highlightthickness=0, command=learn_word)
+check_button = Button(image=check_image, highlightthickness=0, bd=0, command=learn_word)
 check_button.grid(row=1, column=1)
 
 unknown_image = PhotoImage(file="images/skip_word.png")
-unknown_button = Button(image=unknown_image, highlightthickness=0, command=skip_word)
+unknown_button = Button(image=unknown_image, highlightthickness=0, bd=0, command=skip_word)
 unknown_button.grid(row=1, column=0)
 
 # ------------------------------ Processing -----------------------------
 build_dictionary()
 generate_card()
+
+window.wm_iconbitmap("./images/flash-cards-icon.ico")
 window.mainloop()
